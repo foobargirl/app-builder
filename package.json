@@ -94,7 +94,7 @@
     "sass-lint": "sass-lint -v",
     "precommit": "npm run lint && npm run sass-lint && npm run coverage",
     "build-full": "npm run precommit && npm run import-plugins && node scripts/build.js",
-    "ciccio": "npm install -g serve && serve -s build"
+    "ciccio": "npm install -g serve && serve -p 8080 -s build"
   },
   "jest": {
     "collectCoverageFrom": [
